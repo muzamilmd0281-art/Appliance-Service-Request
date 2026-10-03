@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appliance Service Request</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9eaf7);
+      margin: 0;
+      padding-bottom: 120px; /* space for footer */
+    }
+    .hero {
+      background: #0078d7;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .hero a.button {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 18px;
+      color: #0078d7;
+      background: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .hero a.button:hover {
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .availability {
+      background: #fff3cd;
+      color: #856404;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 600px;
+      border: 1px solid #ffeeba;
+      font-weight: bold;
+    }
+    #highlights {
+      background: #f8f9fa;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: left;
+    }
+    #highlights ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+      font-weight: bold;
+    }
+    #testimonials {
+      background: #e9f7ef;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 600px;
+    }
+    #testimonials blockquote {
+      font-style: italic;
+      margin: 10px 0;
+      color: #2c3e50;
+    }
+    #service-areas {
+      background: #f0f8ff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+    #service-areas ul {
+      list-style: none;
+      padding: 0;
+      font-weight: bold;
+    }
+    #map {
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #0078d7;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #fff;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 0 6px;
+      border-radius: 50%;
+      background: #fff;
+      line-height: 40px;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .social-icons a img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+    .social-icons a:hover {
+      transform: scale(1.1);
+      background-color: #005a9e;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 100px; /* above footer */
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: pulseGlow 2s infinite;
+    }
+    .whatsapp-float img {
+      width: 32px;
+      height: 32px;
+      margin-top: 14px;
+    }
+    @keyframes pulseGlow {
+      0% { transform: scale(1); box-shadow: 0 0 8px rgba(37, 211, 102, 0.6); }
+      50% { transform: scale(1.1); box-shadow: 0 0 16px rgba(37, 211, 102, 0.9); }
+      100% { transform: scale(1); box-shadow: 0 0 8px rgba(37, 211, 102, 0.6); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Reliable Appliance Service</h1>
+    <p>Specialists in Top Load & Front Load Washing Machines and Microwaves</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtWqGuqnFdSNnQl-VbpyoAaBvRfnddWg8zpC32euT9fnPx1Q/viewform?usp=sharing" target="_blank" class="button">Book Service Now</a>
+  </div>
+
+  <div class="container">
+    <img src="image/company-logo.png" alt="Company Logo" class="logo">
+
+    <!-- Availability Notice -->
+    <div class="availability">
+      📅 We are available <strong>only on Saturday and Sunday</strong>.  
+      You can book service at any time during these days.
+    </div>
+
+    <!-- Appliance Types Section -->
+    <div class="availability">
+      🛠️ We provide service only for:
+      <ul>
+        <li>Top Load Washing Machines</li>
+        <li>Front Load Washing Machines</li>
+        <li>Microwaves</li>
+      </ul>
+    </div>
+
+    <!-- Service Highlights -->
+    <section id="highlights">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>✅ Expert technicians for washing machines & microwaves</li>
+        <li>⏱️ Weekend availability for your convenience</li>
+        <li>📍 Covering Hebbal, Yelahanka, RT Nagar & more</li>
+        <li>💬 Easy booking via WhatsApp or Google Form</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <blockquote>“Fast and professional service – Hebbal”</blockquote>
+      <blockquote>“Fixed my front load machine in no time – RT Nagar”</blockquote>
+      <blockquote>“Reliable and friendly technicians – Yelahanka”</blockquote>
+    </section>
+  </div>
+
+  <!-- Service Areas Section -->
+  <section id="service-areas">
+    <h2>Service Areas</h2>
+    <ul>
+      <li>Hebbal</li>
+      <li>Yelahanka</li>
+      <li>RT Nagar</li>
+      <li>Jalahalli</li>
+      <li>Manyata Tech Park Area</li>
+      <li>HBR Layout</li>
+      <li>Kamanahalli</li>
+      <li>Kothanur</li>
+    </ul>
+  </section>
+
+  <!-- Google Map Embed -->
+  <section id="map">
+    <h2>Find Us on the Map</h2>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1lkUcS5eY83-EqVLo5ETuooX-jy8GbDA&ehbc=2E312F" width="640" height="480"></iframe>
+  </section>
+
